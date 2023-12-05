@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.3.jar" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="ProgrammableGenerator">
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Constant">
+      <a name="value" val="0x0"/>
+    </tool>
+    <tool name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3">
+    <tool name="Multiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Demultiplexer">
+      <a name="enable" val="false"/>
+    </tool>
+    <tool name="Decoder">
+      <a name="enable" val="false"/>
+    </tool>
+  </lib>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <appear>
+      <polygon fill="none" points="50,40 90,60 90,80 50,100" stroke="#000000"/>
+      <text font-family="æ–‡æ³‰é©¿æ­£é»‘" font-size="7" text-anchor="start" x="55" y="62">D0</text>
+      <text font-family="æ–‡æ³‰é©¿æ­£é»‘" font-size="7" text-anchor="start" x="55" y="83">D1</text>
+      <text font-family="æ–‡æ³‰é©¿æ­£é»‘" font-size="7" text-anchor="start" x="65" y="102">S</text>
+      <text font-family="æ–‡æ³‰é©¿æ­£é»‘" font-size="7" text-anchor="start" x="95" y="62">Y</text>
+      <text font-family="æ–‡æ³‰é©¿æ­£é»‘" font-size="7" text-anchor="start" x="56" y="72">2-1MUX</text>
+      <circ-port height="8" pin="170,60" width="8" x="46" y="56"/>
+      <circ-port height="8" pin="280,60" width="8" x="46" y="76"/>
+      <circ-port height="8" pin="380,60" width="8" x="66" y="86"/>
+      <circ-port height="10" pin="510,60" width="10" x="85" y="65"/>
+      <circ-anchor facing="east" height="6" width="6" x="87" y="67"/>
+    </appear>
+    <wire from="(170,60)" to="(190,60)"/>
+    <wire from="(280,60)" to="(300,60)"/>
+    <wire from="(380,60)" to="(410,60)"/>
+    <wire from="(480,60)" to="(510,60)"/>
+    <wire from="(560,20)" to="(560,100)"/>
+    <wire from="(90,100)" to="(560,100)"/>
+    <wire from="(90,20)" to="(560,20)"/>
+    <wire from="(90,20)" to="(90,100)"/>
+    <wire from="(380,240)" to="(410,240)"/>
+    <wire from="(240,130)" to="(240,200)"/>
+    <wire from="(240,300)" to="(240,390)"/>
+    <wire from="(180,180)" to="(290,180)"/>
+    <wire from="(330,180)" to="(380,180)"/>
+    <wire from="(380,240)" to="(380,320)"/>
+    <wire from="(380,180)" to="(380,240)"/>
+    <wire from="(330,320)" to="(380,320)"/>
+    <wire from="(310,340)" to="(310,360)"/>
+    <wire from="(180,320)" to="(290,320)"/>
+    <wire from="(200,220)" to="(220,220)"/>
+    <wire from="(180,360)" to="(200,360)"/>
+    <wire from="(200,280)" to="(220,280)"/>
+    <wire from="(200,280)" to="(200,360)"/>
+    <wire from="(200,220)" to="(200,280)"/>
+    <wire from="(240,250)" to="(310,250)"/>
+    <wire from="(240,240)" to="(240,250)"/>
+    <wire from="(240,250)" to="(240,260)"/>
+    <wire from="(310,200)" to="(310,250)"/>
+    <wire from="(310,250)" to="(310,300)"/>
+    <wire from="(270,160)" to="(270,360)"/>
+    <wire from="(270,160)" to="(310,160)"/>
+    <wire from="(200,360)" to="(270,360)"/>
+    <wire from="(270,360)" to="(310,360)"/>
+    <comp lib="0" loc="(180,180)" name="Tunnel">
+      <a name="label" val="D0"/>
+    </comp>
+    <comp lib="0" loc="(280,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D1"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(240,260)" name="Transistor">
+      <a name="type" val="n"/>
+      <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(180,320)" name="Tunnel">
+      <a name="label" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(300,60)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="D1"/>
+    </comp>
+    <comp lib="0" loc="(170,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="D0"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(180,360)" name="Tunnel">
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(480,60)" name="Tunnel">
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="0" loc="(240,240)" name="Transistor">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="0" loc="(240,390)" name="Ground"/>
+    <comp lib="0" loc="(410,240)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="Y"/>
+    </comp>
+    <comp lib="0" loc="(190,60)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="D0"/>
+    </comp>
+    <comp lib="0" loc="(510,60)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="Y"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(380,60)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="S"/>
+      <a name="labelloc" val="west"/>
+    </comp>
+    <comp lib="0" loc="(410,60)" name="Tunnel">
+      <a name="facing" val="west"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(240,130)" name="Power"/>
+    <comp lib="0" loc="(330,320)" name="Transmission Gate"/>
+    <comp lib="0" loc="(330,180)" name="Transmission Gate"/>
+  </circuit>
+</project>
