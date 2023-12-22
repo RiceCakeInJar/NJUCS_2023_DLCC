@@ -1,4 +1,4 @@
-# NJUCS_2023_DLCC
+# NJUCS_2023_DLCO
 南京大学计算机系 2023春 数字逻辑与计算机组成 课程实验<br />
 包括了6次课内实验的实验手册、全部circ源文件和实验报告<br />
 NJUCS 2023 Digital Logic and Computer Composition - Course Experiment<br />
